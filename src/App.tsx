@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import AppRoutes from './routes';
+import { NetworkStatus } from './components/NetworkStatus';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -61,6 +62,7 @@ function App() {
         <main>
           <AppRoutes />
         </main>
+        <NetworkStatus />
       </div>
     </Router>
   );
